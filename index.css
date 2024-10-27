@@ -1,10 +1,11 @@
 body {
-    background-image: url('https://github.com/itofficial881/itofficial881.github.io/blob/main/IMG_3744.PNG');
+    background-image: url('https://raw.githubusercontent.com/itofficial881/itofficial881.github.io/main/IMG_3744.PNG');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     font-family: Arial, sans-serif;
 }
+
 
 header {
     background-color: #ff69b4; /* ピンクのヘッダー */

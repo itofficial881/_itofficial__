@@ -1,61 +1,44 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2113.3">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-    span.s1 {font: 12.0px 'Hiragino Sans'}
-  </style>
-</head>
-<body>
-<p class="p1">body {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-family: Arial, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background-color: #fef3f8; /* <span class="s1">明るい背景</span> */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color: #333;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">header {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background-color: #ff69b4; /* <span class="s1">ピンクのヘッダー</span> */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 1em;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">.profile-img {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>width: 150px; /* <span class="s1">プロフィール画像のサイズ</span> */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 50%; /* <span class="s1">丸くする</span> */</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">h1 {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-size: 2.5em;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">h2 {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>font-size: 2em;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin: 1em 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">ul {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>list-style-type: none;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 0;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">li {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>background-color: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>border: 1px solid #ff69b4;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>border-radius: 5px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>margin: 1em 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 1em;</p>
-<p class="p1">}</p>
-<p class="p2"><br></p>
-<p class="p1">footer {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>padding: 1em 0;</p>
-<p class="p1">}</p>
-</body>
-</html>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fef3f8; /* 明るい背景 */
+    color: #333;
+}
+
+header {
+    background-color: #ff69b4; /* ピンクのヘッダー */
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.profile-img {
+    width: 150px; /* プロフィール画像のサイズ */
+    border-radius: 50%; /* 丸くする */
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 1em 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    border: 1px solid #ff69b4;
+    border-radius: 5px;
+    margin: 1em 0;
+    padding: 1em;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+}

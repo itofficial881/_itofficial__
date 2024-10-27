@@ -8,8 +8,7 @@ body {
 }
 
 header {
-    background-color: #ff69b4; /* ピンクのヘッダー */
-    color: white;
+    color: black;
     text-align: center;
     padding: 1em;
 }

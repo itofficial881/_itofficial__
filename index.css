@@ -48,10 +48,47 @@ li {
     text-decoration: none; /* 下線を消す */
     border-radius: 0; /* 角を四角に */
     transition: background-color 0.3s; /* ホバー時のトランジション */
+    position: relative; /* 相対位置に変更 */
+    z-index: 1; /* ボタンを前面に表示 */
 }
 
 .button:hover {
     background-color: rgba(0, 0, 0, 0.1); /* ホバー時に薄い黒の背景 */
+}
+
+.menu {
+    display: none; /* 初期状態で非表示 */
+    position: absolute;
+    top: 60px; /* ヘッダーの下に配置 */
+    left: 0;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    z-index: 1000; /* メニューを最前面に表示 */
+}
+
+.menu a {
+    display: block; /* メニューアイテムをブロック表示 */
+    padding: 10px 0;
+    color: black;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em; /* アイコンのサイズ */
+    z-index: 2000; /* メニューアイコンを前面に表示 */
+}
+
+/* メニューを開いたときのスタイル */
+.menu.active {
+    display: block;
 }
 
 footer {

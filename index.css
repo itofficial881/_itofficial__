@@ -6,7 +6,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-
 header {
     background-color: #ff69b4; /* ピンクのヘッダー */
     color: white;
@@ -39,6 +38,21 @@ li {
     border-radius: 5px;
     margin: 1em 0;
     padding: 1em;
+}
+
+.button {
+    display: inline-block; /* ボタンのように表示 */
+    padding: 10px 20px; /* ボタンのサイズ */
+    border: 1px solid black; /* 黒い縁 */
+    background-color: transparent; /* 背景を透明に */
+    color: black; /* テキストの色 */
+    text-decoration: none; /* 下線を消す */
+    border-radius: 0; /* 角を四角に */
+    transition: background-color 0.3s; /* ホバー時のトランジション */
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* ホバー時に薄い黒の背景 */
 }
 
 footer {

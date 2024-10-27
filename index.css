@@ -33,11 +33,10 @@ ul {
 }
 
 li {
-    background-color: #fff;
-    border: 1px solid #ff69b4;
-    border-radius: 5px;
+    background-color: transparent; /* 背景を透明に */
     margin: 1em 0;
     padding: 1em;
+    border: none; /* 縁をなくす */
 }
 
 .button {

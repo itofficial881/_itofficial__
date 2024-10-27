@@ -4,7 +4,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed; /* 背景画像を固定 */
-    font-family: Arial, sans-serif;
+    font-family: 'Quicksand', sans-serif; /* Quicksandフォントを適用 */
 }
 
 header {

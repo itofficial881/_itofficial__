@@ -1,4 +1,12 @@
 body {
+    background-image: url('https://raw.githubusercontent.com/yourusername/yourrepository/main/images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+body {
     font-family: Arial, sans-serif;
     background-color: #fef3f8; /* 明るい背景 */
     color: #333;

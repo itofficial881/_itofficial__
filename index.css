@@ -30,11 +30,14 @@ h2 {
 ul {
     list-style-type: none;
     padding: 0;
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: center; /* 中央揃え */
+    flex-wrap: wrap; /* ラップする */
 }
 
 li {
     background-color: transparent; /* 背景を透明に */
-    margin: 1em 0;
+    margin: 1em; /* マージンを調整して間隔を確保 */
     padding: 1em;
     border: none; /* 縁をなくす */
 }

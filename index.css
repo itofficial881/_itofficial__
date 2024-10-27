@@ -36,10 +36,7 @@ ul {
 }
 
 li {
-    background-color: transparent; /* 背景を透明に */
-    margin: 1em; /* マージンを調整して間隔を確保 */
-    padding: 1em;
-    border: none; /* 縁をなくす */
+    margin: 0.5em; /* ボタン間の間隔を調整 */
 }
 
 .button {

@@ -51,15 +51,16 @@ li {
     max-width: 300px; /* 最大幅 */
     margin: 1em auto; /* 上下のマージンを設定し中央寄せ */
     padding: 10px; /* 内側の余白 */
-    background-color: rgba(255, 255, 255, 0); /* 透過背景 */
+    background-color: rgba(0, 0, 0, 0.5); /* 薄い黒の背景 */
     border: 1px solid black; /* 黒色の細い縁 */
-    color: black; /* テキストの色 */
-    font-size: 0.9px; /* フォントサイズ */
+    color: white; /* テキストの色を白に */
+    font-size: 1em; /* フォントサイズ */
     overflow: hidden; /* はみ出したテキストを隠す */
 }
 
 .scrolling-text span {
     display: inline-block; /* インラインブロックにしてアニメーションさせる */
+    white-space: nowrap; /* テキストを1行で表示 */
     animation: scroll 10s linear infinite; /* 流れるアニメーション */
 }
 

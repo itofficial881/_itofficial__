@@ -19,10 +19,6 @@ header {
     height: auto;
 }
 
-section {
-    text-align: center; /* セクション内の要素を中央寄せ */
-}
-
 h2 {
     font-size: 2em;
     margin: 1em 0;
@@ -98,7 +94,6 @@ footer {
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
-    text-align: center; /* テキストを中央寄せ */
 }
 
 .marquee p {

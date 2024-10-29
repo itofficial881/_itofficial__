@@ -5,6 +5,7 @@ body {
     background-position: center;
     background-attachment: fixed; /* 背景画像を固定 */
     font-family: 'Quicksand', sans-serif; /* Quicksandフォントを適用 */
+    margin: 0; /* デフォルトのマージンをリセット */
 }
 
 header {
@@ -88,11 +89,6 @@ header {
     display: block;
 }
 
-h2 {
-    font-size: 2em;
-    margin: 1em 0;
-}
-
 ul {
     list-style-type: none;
     padding: 0;
@@ -114,8 +110,6 @@ li {
     text-decoration: none; /* 下線を消す */
     border-radius: 0; /* 角を四角に */
     transition: background-color 0.3s; /* ホバー時のトランジション */
-    position: relative; /* 相対位置に変更 */
-    z-index: 1; /* ボタンを前面に表示 */
 }
 
 .button:hover {
@@ -125,4 +119,17 @@ li {
 footer {
     text-align: center;
     padding: 1em 0;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 600px) {
+    .message-box {
+        max-width: 90%; /* モバイルでは幅を広げる */
+        font-size: 14px; /* フォントサイズを小さく */
+    }
+
+    .header-gif {
+        width: 80%; /* GIFのサイズを調整 */
+        max-width: 80px; /* モバイルでは最大幅を小さく */
+    }
 }

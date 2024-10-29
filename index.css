@@ -26,23 +26,29 @@ header {
 
 /* メッセージボックスのスタイル */
 .message-box {
-    position: absolute;
+    position: fixed; /* 固定表示 */
     top: 150px; /* GIF画像の下に配置 */
-    right: 100%; /* 初期位置は画面外 */
+    left: 50%; /* 水平中央に配置 */
+    transform: translateX(-50%); /* 真ん中に調整 */
     background-color: #ff69b4; /* 背景色 */
     color: white; /* 文字色 */
     padding: 10px 20px; /* 内側の余白 */
     border-radius: 5px; /* 角を丸くする */
+    overflow: hidden; /* オーバーフローを隠す */
+}
+
+.scrolling-text {
+    display: inline-block; /* インラインブロック表示 */
     animation: slide 10s linear infinite; /* アニメーション */
     white-space: nowrap; /* 改行を防ぐ */
 }
 
 @keyframes slide {
     0% {
-        right: 100%; /* 画面外から始まる */
+        transform: translateX(100%); /* 画面外から始まる */
     }
     100% {
-        right: -300px; /* 画面外に流れる */
+        transform: translateX(-100%); /* 画面外に流れる */
     }
 }
 

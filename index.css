@@ -51,10 +51,10 @@ li {
     max-width: 300px; /* 最大幅 */
     margin: 1em auto; /* 上下のマージンを設定し中央寄せ */
     padding: 10px; /* 内側の余白 */
-    background-color: rgba(0, 0, 0, 0.5); /* 薄い黒の背景 */
+    background-color: transparent; /* 透明背景 */
     border: 1px solid black; /* 黒色の細い縁 */
     color: white; /* テキストの色を白に */
-    font-size: 1em; /* フォントサイズ */
+    font-size: 1px; /* フォントサイズ */
     overflow: hidden; /* はみ出したテキストを隠す */
 }
 

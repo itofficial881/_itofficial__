@@ -64,7 +64,6 @@ li {
     border: 1px solid black; /* 黒色の細い縁 */
     color: black; /* テキストの色 */
     font-size: 1.2em; /* フォントサイズ */
-    overflow: hidden; /* はみ出したテキストを隠す */
     white-space: nowrap; /* テキストを1行で表示 */
     animation: scroll 10s linear infinite; /* 流れるアニメーション */
 }

@@ -19,7 +19,7 @@
         <img src="profile.jpg" alt="プロフィール写真" class="profile-img">
     </header>
     <div class="message-box">
-        <p>こちらは右から左に流れるメッセージです！</p>
+        <p class="scrolling-text">こちらは右から左に流れるメッセージです！</p>
     </div>
     <section>
         <h2>SNSリンク</h2>
@@ -31,4 +31,23 @@
                 <a href="https://instagram.com/yourusername" target="_blank" class="button">Instagram</a>
             </li>
             <li>
-                <a href="https://tiktok.com/@yourusername" target="_blank" class="button">bluesky</
+                <a href="https://tiktok.com/@yourusername" target="_blank" class="button">bluesky</a>
+            </li>
+            <!-- さらにSNSを追加 -->
+        </ul>
+    </section>
+    <footer>
+        <p>© 2024 １１０ーitouー</p>
+    </footer>
+
+    <script>
+        // ハンバーガーメニューのトグル機能
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active'); // メニューの開閉
+        });
+    </script>
+</body>
+</html>

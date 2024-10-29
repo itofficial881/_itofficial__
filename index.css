@@ -54,7 +54,7 @@ li {
     background-color: transparent; /* 透明背景 */
     border: 1px solid black; /* 黒色の細い縁 */
     color: black; /* テキストの色をkuroに */
-    font-size: 1.5px; /* フォントサイズ */
+    font-size: 3px; /* フォントサイズ */
     overflow: hidden; /* はみ出したテキストを隠す */
 }
 

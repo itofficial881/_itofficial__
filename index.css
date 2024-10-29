@@ -19,11 +19,6 @@ header {
     height: auto; /* 高さを自動調整 */
 }
 
-h2 {
-    font-size: 2em;
-    margin: 1em 0;
-}
-
 ul {
     list-style-type: none;
     padding: 0;
@@ -59,7 +54,7 @@ li {
     background-color: rgba(255, 255, 255, 0); /* 透過背景 */
     border: 1px solid black; /* 黒色の細い縁 */
     color: black; /* テキストの色 */
-    font-size: 1.2em; /* フォントサイズ */
+    font-size: 1em; /* フォントサイズ */
     overflow: hidden; /* はみ出したテキストを隠す */
 }
 

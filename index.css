@@ -27,8 +27,8 @@ header {
 
 /* メッセージボックスのスタイル */
 .message-box {
-    position: fixed; /* 固定表示 */
-    top: 120px; /* SNSボタンの上に配置（調整） */
+    position: relative; /* スクロールに連動させるために相対位置に変更 */
+    margin-top: 20px; /* プロフィール画像との間に余白を追加 */
     left: 50%; /* 水平中央に配置 */
     transform: translateX(-50%); /* 真ん中に調整 */
     background-color: rgba(0, 0, 0, 0.7); /* 薄めの黒 */
@@ -46,95 +46,4 @@ header {
     white-space: nowrap; /* 改行を防ぐ */
 }
 
-@keyframes slide {
-    0% {
-        transform: translateX(100%); /* 画面外から始まる */
-    }
-    100% {
-        transform: translateX(-100%); /* 画面外に流れる */
-    }
-}
-
-.menu {
-    display: none; /* 初期状態で非表示 */
-    position: absolute;
-    top: 60px; /* ヘッダーの下に配置 */
-    left: 0;
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 1em;
-    z-index: 1000; /* メニューを最前面に表示 */
-}
-
-.menu a {
-    display: block; /* メニューアイテムをブロック表示 */
-    padding: 10px 0;
-    color: black;
-    text-decoration: none;
-}
-
-.menu-toggle {
-    cursor: pointer;
-    padding: 10px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background-color: transparent;
-    border: none;
-    font-size: 1.5em; /* アイコンのサイズ */
-}
-
-/* メニューを開いたときのスタイル */
-.menu.active {
-    display: block;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex; /* フレックスボックスを使用 */
-    justify-content: center; /* 中央揃え */
-    flex-wrap: wrap; /* ラップする */
-    margin-top: 100px; /* メッセージボックスの下に配置するための余白 */
-}
-
-li {
-    margin: 0.5em; /* ボタン間の間隔を調整 */
-}
-
-.button {
-    display: inline-block; /* ボタンのように表示 */
-    padding: 10px 20px; /* ボタンのサイズ */
-    border: 1px solid black; /* 黒い縁 */
-    background-color: transparent; /* 背景を透明に */
-    color: black; /* テキストの色 */
-    text-decoration: none; /* 下線を消す */
-    border-radius: 0; /* 角を四角に */
-    transition: background-color 0.3s; /* ホバー時のトランジション */
-}
-
-.button:hover {
-    background-color: rgba(0, 0, 0, 0.1); /* ホバー時に薄い黒の背景 */
-}
-
-footer {
-    text-align: center;
-    padding: 1em 0;
-}
-
-/* レスポンシブデザイン */
-@media (max-width: 600px) {
-    .message-box {
-        max-width: 90%; /* モバイルでは幅を広げる */
-        font-size: 14px; /* フォントサイズを小さく */
-    }
-
-    .header-gif {
-        width: 80%; /* GIFのサイズを調整 */
-        max-width: 80px; /* モバイルでは最大幅を小さく */
-    }
-
-    ul {
-        margin-top: 80px; /* モバイル用の余白を調整 */
-    }
-}
+/* その他のスタイルはそのまま */

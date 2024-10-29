@@ -28,7 +28,7 @@ header {
 /* メッセージボックスのスタイル */
 .message-box {
     position: fixed; /* 固定表示 */
-    top: 150px; /* GIF画像の下に配置 */
+    top: 120px; /* SNSボタンの上に配置（調整） */
     left: 50%; /* 水平中央に配置 */
     transform: translateX(-50%); /* 真ん中に調整 */
     background-color: rgba(0, 0, 0, 0.7); /* 薄めの黒 */
@@ -95,6 +95,7 @@ ul {
     display: flex; /* フレックスボックスを使用 */
     justify-content: center; /* 中央揃え */
     flex-wrap: wrap; /* ラップする */
+    margin-top: 100px; /* メッセージボックスの下に配置するための余白 */
 }
 
 li {
@@ -131,5 +132,9 @@ footer {
     .header-gif {
         width: 80%; /* GIFのサイズを調整 */
         max-width: 80px; /* モバイルでは最大幅を小さく */
+    }
+
+    ul {
+        margin-top: 80px; /* モバイル用の余白を調整 */
     }
 }

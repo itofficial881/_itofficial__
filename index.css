@@ -55,15 +55,27 @@ li {
     background-color: rgba(0, 0, 0, 0.1); /* ホバー時に薄い黒の背景 */
 }
 
-.text-box {
-    width: 80%; /* テキストボックスの幅 */
+.scrolling-text {
+    width: 80%; /* ボックスの幅 */
     max-width: 400px; /* 最大幅 */
-    height: 100px; /* 高さ */
-    margin: 1em auto; /* 上下のマージンを設定 */
+    margin: 1em auto; /* 上下のマージンを設定し中央寄せ */
     padding: 10px; /* 内側の余白 */
-    border: 1px solid #ccc; /* 薄い灰色のボーダー */
-    border-radius: 5px; /* 角を丸く */
-    font-family: 'Quicksand', sans-serif; /* フォントを統一 */
+    background-color: rgba(255, 255, 255, 0); /* 透過背景 */
+    border: 1px solid black; /* 黒色の細い縁 */
+    color: black; /* テキストの色 */
+    font-size: 1.2em; /* フォントサイズ */
+    overflow: hidden; /* はみ出したテキストを隠す */
+    white-space: nowrap; /* テキストを1行で表示 */
+    animation: scroll 10s linear infinite; /* 流れるアニメーション */
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%); /* 右から出現 */
+    }
+    to {
+        transform: translateX(-100%); /* 左に流れる */
+    }
 }
 
 .menu {

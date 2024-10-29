@@ -3,8 +3,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
-    font-family: 'Quicksand', sans-serif;
+    background-attachment: fixed; /* 背景画像を固定 */
+    font-family: 'Quicksand', sans-serif; /* Quicksandフォントを適用 */
 }
 
 header {
@@ -14,9 +14,13 @@ header {
 }
 
 .header-gif {
-    width: 50%;
-    max-width: 100px;
-    height: auto;
+    width: 50%; /* 幅を50%に設定 */
+    max-width: 300px; /* 最大幅を設定 */
+    height: auto; /* 高さを自動調整 */
+}
+
+h1 {
+    font-size: 2.5em;
 }
 
 h2 {
@@ -27,43 +31,54 @@ h2 {
 ul {
     list-style-type: none;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: center; /* 中央揃え */
+    flex-wrap: wrap; /* ラップする */
 }
 
 li {
-    margin: 0.5em;
+    margin: 0.5em; /* ボタン間の間隔を調整 */
 }
 
 .button {
-    display: inline-block;
-    padding: 10px 20px;
-    border: 1px solid black;
-    background-color: transparent;
-    color: black;
-    text-decoration: none;
-    border-radius: 0;
-    transition: background-color 0.3s;
+    display: inline-block; /* ボタンのように表示 */
+    padding: 10px 20px; /* ボタンのサイズ */
+    border: 1px solid black; /* 黒い縁 */
+    background-color: transparent; /* 背景を透明に */
+    color: black; /* テキストの色 */
+    text-decoration: none; /* 下線を消す */
+    border-radius: 0; /* 角を四角に */
+    transition: background-color 0.3s; /* ホバー時のトランジション */
 }
 
 .button:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1); /* ホバー時に薄い黒の背景 */
+}
+
+.text-box {
+    width: 80%; /* テキストボックスの幅 */
+    max-width: 400px; /* 最大幅 */
+    height: 100px; /* 高さ */
+    margin: 1em auto; /* 上下のマージンを設定 */
+    padding: 10px; /* 内側の余白 */
+    border: 1px solid #ccc; /* 薄い灰色のボーダー */
+    border-radius: 5px; /* 角を丸く */
+    font-family: 'Quicksand', sans-serif; /* フォントを統一 */
 }
 
 .menu {
-    display: none;
+    display: none; /* 初期状態で非表示 */
     position: absolute;
-    top: 60px;
+    top: 60px; /* ヘッダーの下に配置 */
     left: 0;
     background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 1em;
-    z-index: 1000;
+    z-index: 1000; /* メニューを最前面に表示 */
 }
 
 .menu a {
-    display: block;
+    display: block; /* メニューアイテムをブロック表示 */
     padding: 10px 0;
     color: black;
     text-decoration: none;
@@ -77,10 +92,11 @@ li {
     left: 20px;
     background-color: transparent;
     border: none;
-    font-size: 1.5em;
-    z-index: 2000;
+    font-size: 1.5em; /* アイコンのサイズ */
+    z-index: 2000; /* メニューアイコンを前面に表示 */
 }
 
+/* メニューを開いたときのスタイル */
 .menu.active {
     display: block;
 }
@@ -88,20 +104,4 @@ li {
 footer {
     text-align: center;
     padding: 1em 0;
-}
-
-.marquee {
-    overflow: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
-}
-
-.marquee p {
-    display: inline-block;
-    animation: marquee 10s linear infinite;
-}
-
-@keyframes marquee {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
 }

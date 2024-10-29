@@ -30,11 +30,13 @@ header {
     top: 150px; /* GIF画像の下に配置 */
     left: 50%; /* 水平中央に配置 */
     transform: translateX(-50%); /* 真ん中に調整 */
-    background-color: #ff69b4; /* 背景色 */
+    background-color: rgba(0, 0, 0, 0.7); /* 薄めの黒 */
     color: white; /* 文字色 */
-    padding: 10px 20px; /* 内側の余白 */
+    padding: 5px 10px; /* 内側の余白を小さく */
     border-radius: 5px; /* 角を丸くする */
+    border: 1px solid black; /* 細い黒い縁 */
     overflow: hidden; /* オーバーフローを隠す */
+    max-width: 300px; /* 最大幅を設定 */
 }
 
 .scrolling-text {

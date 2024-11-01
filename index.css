@@ -60,7 +60,7 @@ li {
     background-color: transparent; /* 透明背景 */
     border: 1px solid transparent; /* 透明の細い縁 */
     color: White; /* テキストの色を白に */
-    font-size: 12px; /* フォントサイズ */
+    font-size: 15px; /* フォントサイズ */
     overflow: hidden; /* はみ出したテキストを隠す */
 }
 

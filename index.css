@@ -13,6 +13,12 @@ header {
     padding: 1em;
 }
 
+.header-png {
+    width: 50%; /* 幅を50%に設定 */
+    max-width: 300px; /* 最大幅を設定 */
+    height: auto; /* 高さを自動調整 */
+}
+
 .header-gif {
     width: 50%; /* 幅を50%に設定 */
     max-width: 300px; /* 最大幅を設定 */

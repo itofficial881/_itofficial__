@@ -58,9 +58,9 @@ li {
     margin: 1em auto; /* 上下のマージンを設定し中央寄せ */
     padding: 10px; /* 内側の余白 */
     background-color: transparent; /* 透明背景 */
-    border: 1px solid black; /* 黒色の細い縁 */
-    color: black; /* テキストの色をkuroに */
-    font-size: 8px; /* フォントサイズ */
+    border: 1px solid transparent; /* 透明の細い縁 */
+    color: White; /* テキストの色を白に */
+    font-size: 12px; /* フォントサイズ */
     overflow: hidden; /* はみ出したテキストを隠す */
 }
 

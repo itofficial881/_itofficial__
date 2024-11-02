@@ -7,6 +7,25 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
+/* スマホでのボタンレイアウトを1行に収める */
+@media (max-width: 480px) {
+    ul {
+        flex-wrap: nowrap; /* 1行で収める */
+        overflow-x: auto; /* 横スクロール可能にする */
+    }
+
+    li {
+        flex: 1 1 auto; /* ボタン幅を調整 */
+        margin: 0 0.2em; /* ボタン間隔を調整 */
+    }
+
+    .button {
+        padding: 8px 15px; /* ボタンのサイズを少し縮小 */
+        font-size: 14px; /* ボタンのテキストサイズを少し小さく */
+    }
+}
+
+
 
 header {
     color: black;

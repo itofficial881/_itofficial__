@@ -1,11 +1,12 @@
 body {
-    background-image: url('https://raw.githubusercontent.com/itofficial881/https://itofficial881.github.io/mail/main/IMG_3744.PNG');
+    background-image: url('https://raw.githubusercontent.com/itofficial881/itofficial881.github.io/main/IMG_3744.PNG');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed; /* 背景画像を固定 */
-    font-family: 'Quicksand', sans-serif; /* Quicksandフォントを適用 */
+    background-attachment: fixed;
+    font-family: 'Quicksand', sans-serif;
 }
+
 
 header {
     color: black;

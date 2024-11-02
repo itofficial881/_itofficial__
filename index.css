@@ -47,6 +47,18 @@ li {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+.coconala {
+    width: 150%; /* 幅を50%に設定 */
+    max-width: 250px; /* 最大幅を設定 */
+    height: auto; /* 高さを自動調整 */
+}
+
+.skeb {
+    width: 100%; /* 幅を50%に設定 */
+    max-width: 250px; /* 最大幅を設定 */
+    height: auto; /* 高さを自動調整 */
+}
+
 .scrolling-text {
     width: 100%;
     max-width: 300px;

@@ -128,7 +128,6 @@ footer {
 .window {
   position: absolute;
   width: 300px;
-  border: 2px solid #5c4b8b;
   background-color: #fff;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -138,13 +137,14 @@ footer {
 
 /* ウィンドウヘッダー */
 .window-header {
-  background-color: #a68dc7;
-  color: white;
+  background-color: #d3d3d3; /* ヘッダーを薄いグレーに */
+  color: black;
   padding: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
+  font-size: 14px;
 }
 
 /* アイコン */

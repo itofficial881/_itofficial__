@@ -9,13 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <button class="menu-toggle">&#9776;</button>
-    <div class="menu">
-        <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
-        <a href="https://instagram.com/yourusername" target="_blank">Instagram</a>
-        <a href="https://tiktok.com/@yourusername" target="_blank">bluesky</a>
-        <a href="https://itofficial881.github.io/mail/" target="_blank">mail</a>
-    </div>
     <header>
         <img src="https://raw.githubusercontent.com/itofficial881/itofficial881.github.io/main/IMG_3845.png" class="header-png"><br>
         <img src="https://raw.githubusercontent.com/itofficial881/itofficial881.github.io/main/IMG_3830.gif" class="header-gif">
@@ -23,24 +16,25 @@
             <span>現在、このページは工事中です。おかしな挙動があるかもです。XとInstagramとblueskyで更新中です。skeb受付中ꕁ☆</span>
         </div>
 
-            <!-- ウィンドウ: プロフィール -->
-    <div class="window" id="profile-window">
-      <div class="window-header">
-        <span>site menu</span>
-        <button class="close-btn" onclick="closeWindow('profile-window')">×</button>
-      </div>
-      <div class="window-content">
-        <a href="">about me</a><br>
-        <a href="">illustration portfolio</a><br>
-        <a href="">design portfolio</a>
-        <p></p>
-      </div>
-    </div>
+        <!-- ウィンドウ: プロフィール -->
+        <div class="window" id="profile-window">
+            <div class="window-header">
+                <span>site menu</span>
+                <button class="close-btn" onclick="closeWindow('profile-window')">×</button>
+            </div>
+            <div class="window-content">
+                <a href="">about me</a><br>
+                <a href="">illustration portfolio</a><br>
+                <a href="">design portfolio</a>
+                <p></p>
+            </div>
+        </div>
 
-    <!-- デスクトップアイコン -->
-    <div class="icon" onclick="openWindow('profile-window')">
-      <img src="profile-icon.png" alt="プロフィール">
-      <span>site menu</span>
+        <!-- デスクトップアイコン -->
+        <div class="icon" onclick="openWindow('profile-window')">
+            <img src="profile-icon.png" alt="プロフィール">
+            <span>site menu</span>
+        </div>
     </header>
     <section>
         <ul>
@@ -50,28 +44,19 @@
             <li><a href="https://itofficial881.github.io/mail/" target="_blank" class="button">mail</a></li>
         </ul>
     </section>
-        <center><br>
-            <a href="https://xfolio.jp/portfolio/_itofficial__" target="_blank">
-                <img src="https://raw.githubusercontent.com/itofficial881/itofficial881.github.io/main/IMG_3869.gif" class="portfolio">
-            </a><br>
-            <a href="https://skeb.jp/@_itofficial__" target="_blank">
-                <img src="https://raw.githubusercontent.com/itofficial881/itofficial881.github.io/main/IMG_3853.png" class="skeb">
-            </a><br>
-            <a href="https://coconala.com/users/5032168" target="_blank">
-                <img src="https://raw.githubusercontent.com/itofficial881/itofficial881.github.io/main/IMG_3851.png" class="coconala">
-            </a>
-        </center>
+    <center><br>
+        <a href="https://xfolio.jp/portfolio/_itofficial__" target="_blank">
+            <img src="https://raw.githubusercontent.com/itofficial881/itofficial881.github.io/main/IMG_3869.gif" class="portfolio">
+        </a><br>
+        <a href="https://skeb.jp/@_itofficial__" target="_blank">
+            <img src="https://raw.githubusercontent.com/itofficial881/itofficial881.github.io/main/IMG_3853.png" class="skeb">
+        </a><br>
+        <a href="https://coconala.com/users/5032168" target="_blank">
+            <img src="https://raw.githubusercontent.com/itofficial881/itofficial881.github.io/main/IMG_3851.png" class="coconala">
+        </a>
+    </center>
     <footer>
         <p>© 2024 １１０ーitouー</p>
     </footer>
-
-    <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const menu = document.querySelector('.menu');
-
-        menuToggle.addEventListener('click', () => {
-            menu.classList.toggle('active');
-        });
-    </script>
 </body>
 </html>

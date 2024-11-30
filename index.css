@@ -89,14 +89,16 @@ li {
 .window {
   position: absolute;
   width: 300px;
+  height: 200px; /* 必要に応じて高さを指定 */
   background: rgba(255, 255, 255, 0.1) url('https://raw.githubusercontent.com/itofficial881/itofficial881.github.io/main/IMG_3963.PNG') no-repeat center center;
-  background-size: cover; /* 画像をウィンドウの幅にフィットさせる */
+  background-size: 100% 100%; /* 幅と高さをウィンドウ全体に拡張 */
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 0; /* 四角い角 */
-  border: 1px solid black; /* 黒の細い枠 */
+  border-radius: 0;
+  border: 1px solid black;
   overflow: hidden;
   display: none;
 }
+
 
 
 /* ウィンドウヘッダー */

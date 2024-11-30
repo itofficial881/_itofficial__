@@ -89,7 +89,10 @@ li {
   position: absolute;
   width: 300px;
   height: auto; /* 内容に応じて高さを調整 */
-  background: rgba(255, 255, 255, 0.8) url('https://raw.githubusercontent.com/itofficial881/itofficial881.github.io/main/IMG_3963.PNG') no-repeat center center;
+  background-color: rgba(255, 255, 255, 0.8); /* 背景色の透明度 */
+  background-image: url('https://raw.githubusercontent.com/itofficial881/itofficial881.github.io/main/IMG_3963.PNG');
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   color: black; /* ウィンドウ全体の文字色を黒に設定 */
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
@@ -98,6 +101,7 @@ li {
   overflow: hidden;
   display: none;
 }
+
 
 .window-content {
   padding: 15px;

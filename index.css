@@ -85,19 +85,27 @@ li {
     to { transform: translateX(-100%); }
 }
 
-/* ウィンドウ */
 .window {
   position: absolute;
   width: 300px;
-  height: 200px; /* 必要に応じて高さを指定 */
-  background: rgba(255, 255, 255, 0.1) url('https://raw.githubusercontent.com/itofficial881/itofficial881.github.io/main/IMG_3963.PNG') no-repeat center center;
-  background-size: 100% 100%; /* 幅と高さをウィンドウ全体に拡張 */
+  height: auto; /* 内容に応じて高さを調整 */
+  background: rgba(255, 255, 255, 0.8) url('https://raw.githubusercontent.com/itofficial881/itofficial881.github.io/main/IMG_3963.PNG') no-repeat center center;
+  background-size: cover;
+  color: black; /* ウィンドウ全体の文字色を黒に設定 */
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 0;
   border: 1px solid black;
   overflow: hidden;
   display: none;
 }
+
+.window-content {
+  padding: 15px;
+  color: black; /* 文字色を黒に */
+  font-size: 16px; /* 読みやすい文字サイズ */
+  line-height: 1.5; /* 行間の調整 */
+}
+
 
 
 

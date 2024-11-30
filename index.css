@@ -103,7 +103,7 @@ li {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 0;
   border: 1px solid black;
-  overflow: auto; /* 内容が多い場合スクロール可能に */
+  overflow: hidden;
   display: none; /* 初期状態は非表示 */
 }
 
@@ -112,6 +112,9 @@ li {
   color: black;
   font-size: 16px;
   line-height: 1.5;
+  overflow-y: auto; /* ヘッダー固定時のスクロールを有効化 */
+  max-height: calc(90% - 40px); /* ヘッダー分の高さを差し引く */
+  box-sizing: border-box; /* パディングを含む高さ計算 */
 }
 
 /* ウィンドウヘッダー */
@@ -124,7 +127,12 @@ li {
   align-items: center;
   font-weight: bold;
   font-size: 14px;
+  position: sticky; /* 固定表示 */
+  top: 0; /* ウィンドウの上部に固定 */
+  z-index: 10; /* 他の要素の上に表示 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* ヘッダーの影 */
 }
+
 
 /* アイコン */
 .icon {

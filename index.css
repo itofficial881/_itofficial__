@@ -91,8 +91,8 @@ li {
   width: 300px;
   background-color: rgba(255, 255, 255, 0.9); /* 背景を白色で90%透過 */
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-  /* 角を四角にする */
-  border-radius: 0;
+  border-radius: 0; /* 四角い角 */
+  border: 1px solid black; /* 黒の細い枠 */
   overflow: hidden;
   display: none;
 }
@@ -108,6 +108,7 @@ li {
   font-weight: bold;
   font-size: 14px;
 }
+
 
 
 /* アイコン */

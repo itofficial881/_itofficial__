@@ -98,7 +98,7 @@ li {
     background-image: url('https://raw.githubusercontent.com/itofficial881/itofficial881.github.io/main/IMG_3963.PNG');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain; /* 修正箇所 */
     color: black;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     border-radius: 0;

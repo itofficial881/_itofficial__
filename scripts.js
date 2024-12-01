@@ -13,23 +13,21 @@ function openWindow(id) {
 // ウィンドウを閉じる関数
 function closeWindow(id) {
   const windowElement = document.getElementById(id);
-  windowElement.style.display = "none";
   windowElement.style.animation = "fadeOut 0.5s";
-}
+  setTimeout(() => {
+    windowElement.style.display = "none";
 
-// 外側クリックでウィンドウを閉じる
-function handleOutsideClick(event) {
-  const profileWindow = document.getElementById("profile-window");
-  if (!profileWindow.contains(event.target)) {
-    closeWindow("profile-window");
+    // 外側クリックのリスナーを解除
     document.removeEventListener("click", handleOutsideClick);
-  }
+  }, 500);
 }
 
-// アカウント情報をコピーする関数
-function copyAccount() {
-  const text = "X: @_itofficial__\nInstagram: @_itofficial__\nBluesky: itofficial.bsky.social\nPortfolio: https://xfolio.jp/portfolio/_itofficial__";
-  navigator.clipboard.writeText(text).then(() => {
-    alert("アカウント情報がコピーされました！");
+// 外側クリックでウィンドウを閉じる処理
+function handleOutsideClick(event) {
+  const windows = document.querySelectorAll(".window");
+  windows.forEach((windowElement) => {
+    if (windowElement.style.display === "block" && !windowElement.contains(event.target)) {
+      closeWindow(windowElement.id);
+    }
   });
 }

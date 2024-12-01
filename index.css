@@ -133,7 +133,7 @@ li {
     color: black;
     padding: 5px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; /* ボタンを左寄せに */
     align-items: center;
     font-weight: bold;
     font-size: 14px;
@@ -141,6 +141,35 @@ li {
     top: 0;
     z-index: 10;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 10px; /* 間隔を追加 */
+    padding: 0;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: gray;
+}
+
+.copy-btn {
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 0;
+    transition: color 0.3s;
+}
+
+.copy-btn:hover {
+    color: gray;
 }
 
 .icon {
@@ -155,19 +184,4 @@ li {
     width: 50px;
     height: 50px;
     margin-bottom: 5px;
-}
-
-.copy-btn {
-    background: none;
-    border: none;
-    color: black;
-    cursor: pointer;
-    font-size: 18px;
-    margin-left: 5px;
-    padding: 0;
-    transition: color 0.3s;
-}
-
-.copy-btn:hover {
-    color: gray;
 }

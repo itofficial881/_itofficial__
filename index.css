@@ -122,8 +122,7 @@ li {
     max-height: 150px;
     display: block;
     margin: 0 auto 10px;
-    border: 1px solid black;
-    border-radius: 5px;
+    border: none; /* ここを修正して外枠を削除 */
 }
 
 .window-header {

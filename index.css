@@ -86,65 +86,71 @@ li {
 }
 
 .window {
-  position: fixed; /* 常に画面全体に対して配置 */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* 中央揃え */
-  width: 300px;
-  height: auto; /* 内容に応じて高さを調整 */
-  max-width: 90%; /* 画面サイズに応じて調整 */
-  max-height: 90%; /* 高さを制限 */
-  background-color: rgba(255, 255, 255, 0.8);
-  background-image: url('https://raw.githubusercontent.com/itofficial881/itofficial881.github.io/main/IMG_3963.PNG');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  color: black;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 0;
-  border: 1px solid black;
-  overflow: hidden;
-  display: none; /* 初期状態は非表示 */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: auto;
+    max-width: 90%;
+    max-height: 90%;
+    background-color: rgba(255, 255, 255, 0.8);
+    background-image: url('https://raw.githubusercontent.com/itofficial881/itofficial881.github.io/main/IMG_3963.PNG');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    border: 1px solid black;
+    overflow: hidden;
+    display: none;
 }
 
 .window-content {
-  padding: 15px;
-  color: black;
-  font-size: 16px;
-  line-height: 1.5;
-  overflow-y: auto; /* ヘッダー固定時のスクロールを有効化 */
-  max-height: calc(90% - 40px); /* ヘッダー分の高さを差し引く */
-  box-sizing: border-box; /* パディングを含む高さ計算 */
+    padding: 15px;
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-y: auto;
+    max-height: calc(90% - 40px);
+    box-sizing: border-box;
 }
 
-/* ウィンドウヘッダー */
+.window-content img {
+    max-width: 80%;
+    max-height: 150px;
+    display: block;
+    margin: 0 auto 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
 .window-header {
-  background-color: #d3d3d3;
-  color: black;
-  padding: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bold;
-  font-size: 14px;
-  position: sticky; /* 固定表示 */
-  top: 0; /* ウィンドウの上部に固定 */
-  z-index: 10; /* 他の要素の上に表示 */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* ヘッダーの影 */
+    background-color: #d3d3d3;
+    color: black;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-
-/* アイコン */
 .icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px;
 }
 
 .icon img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 5px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
 }

@@ -94,11 +94,10 @@ li {
     height: auto;
     max-width: 90%;
     max-height: 90%;
-    background-color: rgba(255, 255, 255, 0.8);
     background-image: url('https://raw.githubusercontent.com/itofficial881/itofficial881.github.io/main/IMG_3963.PNG');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain; /* 修正箇所 */
+    background-size: contain; /* 画像がウィンドウに合わせて縮小される */
     color: black;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     border-radius: 0;
@@ -122,7 +121,7 @@ li {
     max-height: 150px;
     display: block;
     margin: 0 auto 10px;
-    border: none; /* ここを修正して外枠を削除 */
+    border: none;
 }
 
 .window-header {
